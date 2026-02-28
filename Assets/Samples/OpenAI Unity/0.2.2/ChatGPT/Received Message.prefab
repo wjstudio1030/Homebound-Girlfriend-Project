@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 8660877164928630358, guid: 53cd26a6eefa5a74086203cd118a04d3,
         type: 3}
       propertyPath: m_Name
-      value: User Message
+      value: Received Message
       objectReference: {fileID: 0}
     - target: {fileID: 8660877164928630359, guid: 53cd26a6eefa5a74086203cd118a04d3,
         type: 3}
