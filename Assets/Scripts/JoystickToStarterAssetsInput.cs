@@ -13,11 +13,16 @@ public class JoystickToStarterAssetsInput : MonoBehaviour
 
     private void Update()
     {
-        // 把搖桿值餵給 Starter Assets
-        input.move = new Vector2(
+        Vector2 joystickInput = new Vector2(
             joystick.Horizontal,
             joystick.Vertical
         );
+
+        // 只有搖桿真的有推動時才覆蓋
+        if (joystickInput.magnitude > 0.1f)
+        {
+            input.move = joystickInput;
+        }
     }
 
     // 可選：跳躍按鈕
